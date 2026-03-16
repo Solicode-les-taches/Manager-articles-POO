@@ -1,0 +1,13 @@
+
+
+
+
+>>> in this chapter, I learned how to extend classes 
+and control data access.
+
+- key things to remember:
+
+>>use nheritance:
+
+>use the 'extends' keyword to create a child 
+class from a parent (e.)

@@ -18,3 +18,7 @@ echo  $article3->afficher() . "<br>";
 echo  $article4->afficher() . "<br>";
 echo  $article5->afficher() . "<br>";
 echo  $article6->afficher() . "<br>";
+
+
+
+

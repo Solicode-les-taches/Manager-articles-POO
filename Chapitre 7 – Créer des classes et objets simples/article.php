@@ -12,6 +12,19 @@ class Article {
 
 }
 
+    class commontaire {
+
+    private $contenu;
+    public $auteur;
+    public $date_publish;
+    public $article;
+
+    public function afficher() {
+        return "Contenu : " . $this->contenu . "Auter : " . $this->auteur . "Date_publish : " . $this->date_publish . " <br> Article : " . $this->article->afficher();
+    }
+
+    }
+
 
 $article1 = new Article();
 $article1->titre = "Introduction à PHP <br>";
@@ -29,6 +42,18 @@ $article2->contenu = "La POO facilite la modularité et la maintenance.";
 
 
 echo "<br>" . $article2->afficher();
+
+
+$comment1 = new commontaire();
+
+
+$comment1->contenu = "La POO facilite la modularité et la maintenance.";
+$comment1->auteur = "oussama";
+$comment1->date_publish = " 2026/02/22";
+$comment1->article = $article2;
+
+echo $comment1->afficher();
+
 
 
 ?>

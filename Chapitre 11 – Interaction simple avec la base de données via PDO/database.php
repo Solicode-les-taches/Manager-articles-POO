@@ -19,7 +19,7 @@ class Database {
                 "mysql:host=" . $this->host . ";dbname=" . $this->db_name . ";charset=utf8", $this->username, $this->password
             );
 
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION).
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         } catch (PDOException $o) {
             echo "Erreur de connexion : " . $o->getMessage();
@@ -28,3 +28,4 @@ class Database {
     }
 
 }
+
